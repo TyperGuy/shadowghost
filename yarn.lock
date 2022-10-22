@@ -1195,6 +1195,11 @@
     minimatch "^3.1.2"
     strip-json-comments "^3.1.1"
 
+"@fontsource/nunito-sans@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@fontsource/nunito-sans/-/nunito-sans-4.5.10.tgz#109c1e680a56e8c196dc834379c32d03b0614c53"
+  integrity sha512-GVKc3mEfnk3fLEuiQXNYhlP/Z9SrCgD831xZJ7J+6OgFzEf6LNnyHPiqWfjW671sAmOBQTLgm/21z78K/beWEw==
+
 "@humanwhocodes/config-array@^0.10.5":
   version "0.10.7"
   resolved "https://registry.npmjs.org/@humanwhocodes/config-array/-/config-array-0.10.7.tgz"
@@ -1520,7 +1525,7 @@
 
 "@types/styled-components@^5.1.26":
   version "5.1.26"
-  resolved "https://registry.npmjs.org/@types/styled-components/-/styled-components-5.1.26.tgz"
+  resolved "https://registry.yarnpkg.com/@types/styled-components/-/styled-components-5.1.26.tgz#5627e6812ee96d755028a98dae61d28e57c233af"
   integrity sha512-KuKJ9Z6xb93uJiIyxo/+ksS7yLjS1KzG6iv5i78dhVg/X3u5t1H7juRWqVmodIdz6wGVaIApo1u01kmFRdJHVw==
   dependencies:
     "@types/hoist-non-react-statics" "*"
