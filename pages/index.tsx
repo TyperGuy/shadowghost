@@ -6,9 +6,6 @@ const Home: NextPage = () => {
   return (
     <div className={styles.main}>
       <Header />
-      <Header />
-      <Header />
-      <Header />
     </div>
   );
 };
