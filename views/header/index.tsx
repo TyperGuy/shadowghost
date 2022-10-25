@@ -3,6 +3,7 @@ import Styles from "./Header.module.scss";
 import { Logo } from "components/logo";
 import Link from "next/link";
 import {Flex, Text } from "@chakra-ui/react";
+import {Share} from 'widgets/share';
 
 export const Header: NextPage = () => {
   return (
@@ -10,7 +11,7 @@ export const Header: NextPage = () => {
      <div className={Styles.nav}>
       <Logo />
       <Flex gap={4}>
-        <Text>Share</Text>
+        <Share/>
         <Link href="/about">
           <a>
             <Text>About us</Text>
