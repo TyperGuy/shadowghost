@@ -9,8 +9,8 @@ export const Call2Action: NextPage = () => {
      <div className={Styles.innerContainer}>
       <Flex direction="column" gap={10}>
         <Text maxW={378}>
-          Are you looking for blend mode background images & 
-          beautiful background gradients for your User Interface?
+        Are you looking for premade Shadows effects & easy way to 
+        create box-shadow for your user Interface? Well, We got a great message for you!
         </Text>
         <Flex gap={5}className={Styles.buttonContainer}>
           <Button className={Styles.button}> Expore existing</Button>
