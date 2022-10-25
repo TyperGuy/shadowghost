@@ -16,7 +16,7 @@ export const Container = styled.div `
   position: relative;
 `
 export const OptionContainer = styled.div `
- display: flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
@@ -29,4 +29,16 @@ export const OptionContainer = styled.div `
   left: -75px;
   animation: ${animation} .4s linear ;
   padding: 10px ;
+  margin-top: 10px;
+  &:before{
+    content: "";
+    left: 50%;
+    position: absolute;
+    height: 20px;
+    margin-left: -10px;
+    top: -8px;
+    transform: rotate(135deg);
+    width: 20px;
+    background: #fff;
+  }
 `

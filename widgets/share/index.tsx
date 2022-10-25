@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import { useState } from "react";
-import {Container, OptionContainer} from './Share.styles';
+import { Container, OptionContainer} from './Share.styles';
 import {Text} from '@chakra-ui/react';
 
 
