@@ -30,7 +30,21 @@ export const Call2Action: NextPage = () => {
           <ModalHeader>Create Custom Box-Shadow</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae perspiciatis reiciendis voluptate, totam consequuntur quisquam eius, voluptatem fugiat dicta corrupti rerum. Magnam, inventore eos ea odio tenetur laudantium itaque voluptatem.
+            <Flex borderRadius={5} padding={5} boxShadow=" rgba(0, 0, 0, 0.15) 0px 2px 8px;">
+               <Text>
+                 Lorem ipsum dolor sit, amet consectetur 
+                 adipisicing elit. Quae perspiciatis reiciendis 
+                 voluptate, totam consequuntur quisquam eius, 
+                 voluptatem fugiat dicta corrupti rerum. Magnam, 
+                 inventore eos ea odio tenetur laudantium itaque 
+                 voluptatem.
+                 Quae perspiciatis reiciendis 
+                 voluptate, totam consequuntur quisquam eius, 
+                 voluptatem fugiat dicta corrupti rerum. Magnam, 
+                 inventore eos ea odio tenetur laudantium itaque 
+                 voluptatem.
+               </Text>
+            </Flex>
           </ModalBody>
 
           <ModalFooter>
