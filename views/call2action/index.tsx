@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Img, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure } from "@chakra-ui/react";
+import { Box, Button, Flex, Img, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Text, useDisclosure, useToast } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Styles from "./Call2Action.module.scss";
 import {BiCopyAlt as Copy} from 'react-icons/bi';
@@ -6,6 +6,7 @@ import {BiCopyAlt as Copy} from 'react-icons/bi';
 
 export const Call2Action: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
+  const toast = useToast();
   return (
     <>
     <div className={Styles.container}>
@@ -46,6 +47,16 @@ export const Call2Action: NextPage = () => {
                     color="#222"/>
               </Flex>} 
                 className={Styles.copyButton}
+                onClick={() =>
+                  toast({
+                    position: 'bottom-left',
+                    render: () => (
+                      <Box className={Styles.toast} color='#222' p={3} bg='#fff'>
+                        {`Copied to clipboard. You can now " CTR + V "`}
+                      </Box>
+                    ),
+                  })
+                }
                 > Copy to clipboard
           </Button>
           </ModalFooter>
