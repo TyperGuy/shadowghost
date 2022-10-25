@@ -13,10 +13,20 @@
   justify-content: space-between;
   align-items: center;
   padding-bottom: 30px;
+  flex-direction:column;
+  @media only screen and (min-width:866px){
+    flex-direction:row;
+  }
+  @media only screen and (min-width:1300px){
+    width: 1300px;
+  }
 }
 .buttonContainer{
   width: 100%;
   flex-direction: column;
+  @media only screen and (min-width:762px){
+    flex-direction: row;
+  }
 }
 .button{
   width: 100%;
@@ -57,4 +67,11 @@
   margin: 0;
   opacity: 1;
   transition: 0s
+}
+
+.img{
+  width: 100%;
+  @media only screen and (min-width:866px){
+    max-width: 400px;
+  }
 }

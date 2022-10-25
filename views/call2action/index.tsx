@@ -1,4 +1,4 @@
-import { Box, Button, Flex, Text } from "@chakra-ui/react";
+import { Box, Button, Flex, Img, Text } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Styles from "./Call2Action.module.scss";
 
@@ -17,6 +17,7 @@ export const Call2Action: NextPage = () => {
           <Button className={Styles.button}> Eazy Create</Button>
         </Flex>
       </Flex>
+      <Img className={Styles.img} src="/illustration.png"/>
      </div>
     </div>
   );
