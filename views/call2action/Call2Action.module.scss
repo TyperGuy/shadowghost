@@ -28,6 +28,41 @@
     flex-direction: row;
   }
 }
+
+.copyButton{
+  width: 100%;
+  min-height: 56px;
+  position: relative;
+  background-color:$primary!important;
+  color: $white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+.copyButton:hover{
+  transform : translateY(-5px)
+}
+.copyButton:after {
+  content: "";
+  background: rgba(100, 100, 111, 0.2);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.copyButton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 .button{
   width: 100%;
   min-height: 56px;
