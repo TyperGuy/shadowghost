@@ -29,6 +29,7 @@ export const OptionContainer = styled.div `
   left: -75px;
   animation: ${animation} .4s linear ;
   padding: 10px ;
+  gap:10px;
   margin-top: 10px;
   &:before{
     content: "";
@@ -42,3 +43,4 @@ export const OptionContainer = styled.div `
     background: #fff;
   }
 `
+

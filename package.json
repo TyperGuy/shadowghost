@@ -13,10 +13,12 @@
     "@emotion/react": "^11.10.4",
     "@emotion/styled": "^11.10.4",
     "@fontsource/nunito-sans": "^4.5.10",
+    "@types/react-icons": "^3.0.0",
     "framer-motion": "^7.6.1",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.6.0",
     "sass": "^1.55.0",
     "styled-components": "^5.3.6"
   },
