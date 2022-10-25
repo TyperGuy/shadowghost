@@ -69,8 +69,27 @@
   transition: 0s
 }
 
+@keyframes float {
+	0% {
+	
+		transform: translatey(0px);
+	}
+	50% {
+	
+		transform: translatey(-20px);
+	}
+	100% {
+		
+		transform: translatey(0px);
+	}
+}
+
 .img{
   width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px $light);
+  filter: drop-shadow(5px 5px 5px $light);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
   @media only screen and (min-width:866px){
     max-width: 450px;
   }
