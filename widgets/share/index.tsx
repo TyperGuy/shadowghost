@@ -37,6 +37,7 @@ export const Share: NextPage = () => {
       </Text>
      { isOpen&&
        <OptionContainer>
+        <Text height="60px">Tell people about us, and what we do!</Text>
           { 
             Medias.map(medias =>{
               return(

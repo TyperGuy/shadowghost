@@ -22,7 +22,7 @@ export const OptionContainer = styled.div `
   position: absolute;
   background: #fff ;
   width: 200px;
-  height: 200px;
+  height: 250px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   z-index: 2!important;
   border-radius: .5rem;
