@@ -1,10 +1,11 @@
 .phone{
+  cursor: pointer;
   @media only screen and (min-width: 770px) {
     display: none;
   }
 }
 .web{
-  
+  cursor: pointer;
   @media only screen and (max-width: 770px) {
     display: none;
   }
