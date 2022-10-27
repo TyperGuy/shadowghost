@@ -21,7 +21,7 @@ export const Call2Action: NextPage = () => {
           <Button onClick={onOpen} className={Styles.button}> Eazy Create</Button>
         </Flex>
       </Flex>
-      <Img className={Styles.img} src="/illustration.png"/>
+      <Img className={Styles.img} src="/ghost.png"/>
      </div>
     </div>
     <Modal isOpen={isOpen} onClose={onClose}>
@@ -30,20 +30,37 @@ export const Call2Action: NextPage = () => {
           <ModalHeader>Create Custom Box-Shadow</ModalHeader>
           <ModalCloseButton />
           <ModalBody>
-            <Flex borderRadius={5} padding={5} boxShadow=" rgba(0, 0, 0, 0.15) 0px 2px 8px;">
-               <Text>
-                 Lorem ipsum dolor sit, amet consectetur 
-                 adipisicing elit. Quae perspiciatis reiciendis 
-                 voluptate, totam consequuntur quisquam eius, 
-                 voluptatem fugiat dicta corrupti rerum. Magnam, 
-                 inventore eos ea odio tenetur laudantium itaque 
-                 voluptatem.
-                 Quae perspiciatis reiciendis 
-                 voluptate, totam consequuntur quisquam eius, 
-                 voluptatem fugiat dicta corrupti rerum. Magnam, 
-                 inventore eos ea odio tenetur laudantium itaque 
-                 voluptatem.
-               </Text>
+            <Flex direction="column" gap={5}>
+              <Flex borderRadius={5} padding={5} boxShadow=" rgba(0, 0, 0, 0.15) 0px 2px 8px;">
+                <Text>
+                  Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Quae perspiciatis reiciendis 
+                  voluptate, totam consequuntur quisquam eius, 
+                  voluptatem fugiat dicta corrupti rerum. Magnam, 
+                  inventore eos ea odio tenetur laudantium itaque 
+                  voluptatem.
+                  Quae perspiciatis reiciendis 
+                  voluptate, totam consequuntur quisquam eius, 
+                  voluptatem fugiat dicta corrupti rerum. Magnam, 
+                  inventore eos ea odio tenetur laudantium itaque 
+                  voluptatem.
+                </Text>
+              </Flex>
+              <Flex borderRadius={5} padding={5} boxShadow=" rgba(0, 0, 0, 0.15) 0px 2px 8px;">
+                <Text>
+                  Lorem ipsum dolor sit, amet consectetur 
+                  adipisicing elit. Quae perspiciatis reiciendis 
+                  voluptate, totam consequuntur quisquam eius, 
+                  voluptatem fugiat dicta corrupti rerum. Magnam, 
+                  inventore eos ea odio tenetur laudantium itaque 
+                  voluptatem.
+                  Quae perspiciatis reiciendis 
+                  voluptate, totam consequuntur quisquam eius, 
+                  voluptatem fugiat dicta corrupti rerum. Magnam, 
+                  inventore eos ea odio tenetur laudantium itaque 
+                  voluptatem.
+                </Text>
+              </Flex>
             </Flex>
           </ModalBody>
 

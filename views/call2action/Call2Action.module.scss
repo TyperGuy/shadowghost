@@ -109,16 +109,16 @@
 
 @keyframes float {
 	0% {
-	
-		transform: translatey(0px);
+		transform: translate(0px,1px);
+   
 	}
 	50% {
 	
-		transform: translatey(-20px);
+		transform: translate(-20px,-20px);
 	}
 	100% {
 		
-		transform: translatey(0px);
+		transform: translate(0px,1px);
 	}
 }
 
