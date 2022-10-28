@@ -184,7 +184,7 @@ export const Call2Action: NextPage = () => {
           width: 50,
           height: 50,
           marginTop: 20,
-          backgroundColor: "red",
+          backgroundColor: color.rgba,
         }}
       />
     </div>
