@@ -25,12 +25,14 @@ import {
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Styles from "./Call2Action.module.scss";
+import InputColor from 'react-input-color';
 import { BiCopyAlt as Copy } from "react-icons/bi";
 import { useState } from "react";
 
 export const Call2Action: NextPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const [sliderValue, setSliderValue] = useState(50);
+  const [color, setColor] = useState({});
   const toast = useToast();
   return (
     <>
@@ -171,6 +173,21 @@ export const Call2Action: NextPage = () => {
                   </FormLabel>
                   <Switch id="email-alerts" />
                 </FormControl>
+                <div>
+      <InputColor
+        initialValue="#5e72e4"
+        onChange={setColor}
+        placement="right"
+      />
+      <div
+        style={{
+          width: 50,
+          height: 50,
+          marginTop: 20,
+          backgroundColor: color.rgba,
+        }}
+      />
+    </div>
               </Flex>
             </Flex>
           </ModalBody>
