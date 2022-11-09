@@ -25,7 +25,7 @@ import {
 } from "@chakra-ui/react";
 import type { NextPage } from "next";
 import Styles from "./Call2Action.module.scss";
-import InputColor from 'react-input-color';
+import InputColor from "react-input-color";
 import { BiCopyAlt as Copy } from "react-icons/bi";
 import { useState } from "react";
 
@@ -71,9 +71,6 @@ export const Call2Action: NextPage = () => {
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
                   perspiciatis reiciendis voluptate, totam consequuntur quisquam
                   eius, voluptatem fugiat dicta corrupti rerum. Magnam,
-                  inventore eos ea odio tenetur laudantium itaque voluptatem.
-                  Quae perspiciatis reiciendis voluptate, totam consequuntur
-                  quisquam eius, voluptatem fugiat dicta corrupti rerum. Magnam,
                   inventore eos ea odio tenetur laudantium itaque voluptatem.
                 </Text>
               </Flex>
@@ -173,21 +170,20 @@ export const Call2Action: NextPage = () => {
                   </FormLabel>
                   <Switch id="email-alerts" />
                 </FormControl>
-                <div>
-      <InputColor
-        initialValue="#5e72e4"
-        onChange={setColor}
-        placement="right"
-      />
-      <div
-        style={{
-          width: 50,
-          height: 50,
-          marginTop: 20,
-          backgroundColor: color.rgba,
-        }}
-      />
-    </div>
+                <Flex
+                  width="100%"
+                  height="50px"
+                  align={"center"}
+                  paddingLeft={5}
+                  borderRadius={5}
+                  backgroundColor={color.rgba}
+                >
+                  <InputColor
+                    initialValue="#5e72e4"
+                    onChange={setColor}
+                    placement="right"
+                  />
+                </Flex>
               </Flex>
             </Flex>
           </ModalBody>
