@@ -35,7 +35,10 @@ interface modalProps {
   onClose: () => void;
 }
 export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
-  const [sliderValue, setSliderValue] = useState(50);
+  const [offsetX, setOffsetX] = useState(125);
+  const [offsetY, setOffsetY] = useState(125);
+  const [blur, setBlur] = useState(125);
+  const [spreed, setSpreed] = useState(125);
   const [color, setColor] = useState({});
   const toast = useToast();
   return (
@@ -65,11 +68,12 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
               gap={16}
             >
               <Slider
+                max={250}
                 aria-label="slider-ex-6"
-                onChange={(val) => setSliderValue(val)}
+                onChange={(val) => setOffsetX(val)}
               >
                 <SliderMark
-                  value={sliderValue}
+                  value={offsetX}
                   textAlign="center"
                   bg="#222"
                   color="white"
@@ -78,7 +82,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                   w="12"
                   borderRadius={4}
                 >
-                  {sliderValue}%
+                  {offsetX}
                 </SliderMark>
                 <SliderTrack>
                   <SliderFilledTrack bg={"#222"} />
@@ -86,11 +90,12 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 <SliderThumb bg={"#222"} />
               </Slider>
               <Slider
+                max={250}
                 aria-label="slider-ex-6"
-                onChange={(val) => setSliderValue(val)}
+                onChange={(val) => setOffsetY(val)}
               >
                 <SliderMark
-                  value={sliderValue}
+                  value={offsetY}
                   textAlign="center"
                   bg="#222"
                   color="white"
@@ -99,7 +104,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                   w="12"
                   borderRadius={4}
                 >
-                  {sliderValue}%
+                  {offsetY}
                 </SliderMark>
                 <SliderTrack>
                   <SliderFilledTrack bg={"#222"} />
@@ -107,11 +112,12 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 <SliderThumb bg={"#222"} />
               </Slider>
               <Slider
+                max={250}
                 aria-label="slider-ex-6"
-                onChange={(val) => setSliderValue(val)}
+                onChange={(val) => setBlur(val)}
               >
                 <SliderMark
-                  value={sliderValue}
+                  value={blur}
                   textAlign="center"
                   bg="#222"
                   color="white"
@@ -120,7 +126,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                   w="12"
                   borderRadius={4}
                 >
-                  {sliderValue}%
+                  {blur}
                 </SliderMark>
                 <SliderTrack>
                   <SliderFilledTrack bg={"#222"} />
@@ -128,11 +134,12 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 <SliderThumb bg={"#222"} />
               </Slider>
               <Slider
+                max={250}
                 aria-label="slider-ex-6"
-                onChange={(val) => setSliderValue(val)}
+                onChange={(val) => setSpreed(val)}
               >
                 <SliderMark
-                  value={sliderValue}
+                  value={spreed}
                   textAlign="center"
                   bg="#222"
                   color="white"
@@ -141,7 +148,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                   w="12"
                   borderRadius={4}
                 >
-                  {sliderValue}%
+                  {spreed}
                 </SliderMark>
                 <SliderTrack>
                   <SliderFilledTrack bg={"#222"} />
