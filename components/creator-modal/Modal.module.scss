@@ -1,0 +1,135 @@
+@import 'styles/_colors';
+
+.container{
+  width: 100%;
+  background-color: $light;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.innerContainer{
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 30px;
+  flex-direction:column;
+  @media only screen and (min-width:866px){
+    flex-direction:row;
+  }
+  @media only screen and (min-width:1300px){
+    width: 1300px;
+  }
+}
+.buttonContainer{
+  width: 100%;
+  flex-direction: column;
+  @media only screen and (min-width:762px){
+    flex-direction: row;
+  }
+}
+
+.copyButton{
+  width: 100%;
+  min-height: 56px;
+  position: relative;
+  background-color:$primary!important;
+  color: $white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+.copyButton:hover{
+  transform : translateY(-5px)
+}
+.copyButton:after {
+  content: "";
+  background: rgba(100, 100, 111, 0.2);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+.copyButton:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+.toast{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.button{
+  width: 100%;
+  min-height: 56px;
+  position: relative;
+  background-color:$primary!important;
+  color: $white;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  overflow: hidden;
+}
+.button:first-of-type{
+  width: 100%;
+  min-height: 56px;
+  background-color:$white!important;
+  color: $primary;
+}
+.button:hover{
+  transform : translateY(-5px)
+}
+.button:after {
+  content: "";
+  background: rgba(100, 100, 111, 0.2);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+@keyframes float {
+	0% {
+		transform: translate(0px,1px);
+   
+	}
+	50% {
+	
+		transform: translate(-20px,-20px);
+	}
+	100% {
+		
+		transform: translate(0px,1px);
+	}
+}
+
+.img{
+
+  width: 100%;
+  -webkit-filter: drop-shadow(5px 5px 5px $light);
+  filter: drop-shadow(5px 5px 5px $light);
+	transform: translatey(0px);
+	animation: float 6s ease-in-out infinite;
+  @media only screen and (min-width:866px){
+    max-width: 450px;
+  }
+}
