@@ -39,6 +39,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
   const [offsetY, setOffsetY] = useState(125);
   const [blur, setBlur] = useState(125);
   const [spreed, setSpreed] = useState(125);
+  const [inset, setInset] = useState(false);
   const [color, setColor] = useState({});
   const toast = useToast();
   return (
@@ -52,7 +53,9 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
             <Flex
               borderRadius={5}
               padding={5}
-              boxShadow=" rgba(0, 0, 0, 0.15) 0px 2px 8px;"
+              boxShadow={`${offsetX}px ${offsetY}px ${spreed}px ${blur}px ${
+                inset ? "inset" : ""
+              } ${color.rgba} `}
             >
               <Text textAlign={"justify"}>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae
@@ -68,6 +71,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
               gap={16}
             >
               <Slider
+                min={-250}
                 max={250}
                 aria-label="slider-ex-6"
                 onChange={(val) => setOffsetX(val)}
@@ -90,6 +94,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 <SliderThumb bg={"#222"} />
               </Slider>
               <Slider
+                min={-250}
                 max={250}
                 aria-label="slider-ex-6"
                 onChange={(val) => setOffsetY(val)}
@@ -163,7 +168,11 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 <FormLabel htmlFor="email-alerts" mb="0">
                   Turn Inset?
                 </FormLabel>
-                <Switch id="email-alerts" />
+                <Switch
+                  onChange={() => setInset(!inset)}
+                  colorScheme="brand"
+                  id="email-alerts"
+                />
               </FormControl>
               <Flex
                 width="100%"
@@ -174,7 +183,7 @@ export const Creator = ({ isOpen, onOpen, onClose }: modalProps) => {
                 backgroundColor={color.rgba}
               >
                 <InputColor
-                  initialValue="#5e72e4"
+                  initialValue="#c1c1c1"
                   onChange={setColor}
                   placement="right"
                 />
